@@ -3,78 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventify - Event Management</title>
+    <title>Event Management System</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <h2 class="logo">Eventify</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Navigation Bar -->
+<header>
+    <nav>
+        <div class="logo">EventPro</div>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Make Every Moment Special</h1>
-            <p>Discover, celebrate and create unforgettable memories.</p>
-            <a href="#events" class="btn">Explore Events</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section class="hero" id="home">
+
+    <div>
+        <h1>Make Your Events Special</h1>
+
+        <p>
+            We Make Your Special Moments Unforgettable.
+        </p>
+
+        <a href="#events" class="btn">Explore Events</a>
+    </div>
+
+</section>
+
+<!-- Events Section -->
+<section id="events">
+
+    <h2>Our Events & Packages</h2>
+
+    <div class="event-container">
+
+        <!-- Wedding -->
+        <div class="event-card">
+
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600">
+
+            <h3>Wedding Event</h3>
+
+            <p>Make your wedding day beautiful and memorable.</p>
+
+            <p><b>Price: ₹15,000</b></p>
+
+            <button onclick="bookEvent('Wedding Event', 15000)">
+                Book Now
+            </button>
+
         </div>
-    </section>
 
-    <section id="events">
-        <h2>Upcoming Events</h2>
-        <div class="event-container">
+        <!-- Birthday -->
+        <div class="event-card">
 
-            <div class="event-card">
-                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600" alt="Music concert">
-                <h3>Music Festival</h3>
-                <p>Date: 20 December 2026</p>
-                <p>Enjoy live music and entertainment.</p>
-                <button onclick="bookEvent('Music Festival')">Book Now</button>
-            </div>
+            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600">
 
-            <div class="event-card">
-                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600" alt="Conference">
-                <h3>Tech Conference</h3>
-                <p>Date: 25 December 2026</p>
-                <p>Explore new technologies and ideas.</p>
-                <button onclick="bookEvent('Tech Conference')">Book Now</button>
-            </div>
+            <h3>Birthday Party</h3>
 
-            <div class="event-card">
-                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600" alt="Wedding event">
-                <h3>Wedding Expo</h3>
-                <p>Date: 30 December 2026</p>
-                <p>Discover creative wedding celebrations.</p>
-                <button onclick="bookEvent('Wedding Expo')">Book Now</button>
-            </div>
+            <p>Celebrate your birthday with amazing decorations.</p>
+
+            <p><b>Price: ₹5,000</b></p>
+
+            <button onclick="bookEvent('Birthday Party', 5000)">
+                Book Now
+            </button>
 
         </div>
-    </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Eventify is an event management platform that helps people
-        discover and book exciting events easily.</p>
-    </section>
+        <!-- Concert -->
+        <div class="event-card">
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: eventify@example.com</p>
-        <p>Location: Kolkata, India</p>
-    </section>
+            <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600">
 
-    <footer>
-        <p>© 2026 Eventify. All Rights Reserved.</p>
-    </footer>
+            <h3>Music Concert</h3>
 
-    <script src="script.js"></script>
+            <p>Enjoy unforgettable music and entertainment.</p>
+
+            <p><b>Price: ₹10,000</b></p>
+
+            <button onclick="bookEvent('Music Concert', 10000)">
+                Book Now
+            </button>
+
+        </div>
+
+        <!-- Corporate -->
+        <div class="event-card">
+
+            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600">
+
+            <h3>Corporate Event</h3>
+
+            <p>Professional arrangements for business events.</p>
+
+            <p><b>Price: ₹12,000</b></p>
+
+            <button onclick="bookEvent('Corporate Event', 12000)">
+                Book Now
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- About Section -->
+<section id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        EventPro is a professional event management service.
+        We organize weddings, birthday parties, concerts and
+        corporate events to make every occasion special.
+    </p>
+
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Email: eventpro@gmail.com</p>
+
+    <p>Phone: +91 9876543210</p>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+    <p>© 2026 EventPro. All Rights Reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
