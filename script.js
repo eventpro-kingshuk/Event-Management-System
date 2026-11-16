@@ -1,21 +1,38 @@
-function bookEvent(eventName) {
-    let name = prompt("Enter your name:");
+function bookEvent(eventName, price) {
+    const name = prompt("Enter your name:");
 
-    if (name === null || name.trim() === "") {
-        alert("Please enter your name.");
+    if (!name || name.trim() === "") {
+        alert("Please enter your name!");
         return;
     }
 
-    let email = prompt("Enter your email address:");
+    const email = prompt("Enter your email:");
 
-    if (email === null || email.trim() === "") {
-        alert("Please enter your email.");
+    if (!email || email.trim() === "") {
+        alert("Please enter your email!");
         return;
     }
 
-    alert(
-        "Thank you " + name +
-        "! Your booking request for " +
-        eventName + " has been received."
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert("Please enter a valid email address!");
+        return;
+    }
+
+    const confirmBooking = confirm(
+        "Booking Details:\n\n" +
+        "Event: " + eventName + "\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Price: ₹" + price + "\n\n" +
+        "Do you want to confirm your booking?"
     );
+
+    if (confirmBooking) {
+        alert(
+            "Your registration is successful!\n\n" +
+            "Thank you, " + name + "!\n" +
+            "Event: " + eventName + "\n" +
+            "Price: ₹" + price
+        );
+    }
 }
