@@ -11,8 +11,7 @@ body {
     color: #222;
 }
 
-/* Navigation Bar */
-
+/* Navigation */
 header {
     background: #17152e;
     padding: 20px 8%;
@@ -51,25 +50,18 @@ nav a:hover {
     color: #ffb347;
 }
 
-/* Home Section */
-
+/* Hero Section */
 .hero {
     min-height: 500px;
-
     background:
-    linear-gradient(
-        rgba(15, 12, 35, 0.75),
-        rgba(15, 12, 35, 0.75)
-    ),
+    linear-gradient(rgba(15,12,35,0.7), rgba(15,12,35,0.7)),
     url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400");
 
     background-size: cover;
     background-position: center;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     color: white;
     padding: 30px;
@@ -86,12 +78,12 @@ nav a:hover {
 }
 
 .btn {
+    display: inline-block;
     background: #ff9f43;
     color: white;
     padding: 14px 30px;
     text-decoration: none;
     border-radius: 30px;
-    display: inline-block;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -101,8 +93,7 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-/* Common Sections */
-
+/* Sections */
 section {
     padding: 70px 8%;
     text-align: center;
@@ -112,10 +103,10 @@ section h2 {
     font-size: 35px;
     color: #17152e;
     margin-bottom: 40px;
+    line-height: 1.4;
 }
 
 /* Event Cards */
-
 .event-container {
     display: flex;
     justify-content: center;
@@ -128,9 +119,7 @@ section h2 {
     width: 300px;
     border-radius: 15px;
     overflow: hidden;
-
     box-shadow: 0 5px 20px rgba(0,0,0,0.10);
-
     padding-bottom: 25px;
     transition: 0.3s;
 }
@@ -155,7 +144,12 @@ section h2 {
 .event-card p {
     color: #666;
     margin: 10px;
-    line-height: 1.5;
+    line-height: 1.6;
+}
+
+.event-card p b {
+    color: #e67e22;
+    font-size: 18px;
 }
 
 .event-card button {
@@ -174,10 +168,9 @@ section h2 {
     background: #ff9f43;
 }
 
-/* About Section */
-
+/* About */
 #about {
-    background: #ffffff;
+    background: white;
 }
 
 #about p {
@@ -188,8 +181,7 @@ section h2 {
     color: #555;
 }
 
-/* Contact Section */
-
+/* Contact */
 #contact {
     background: #f0eff8;
 }
@@ -201,7 +193,6 @@ section h2 {
 }
 
 /* Footer */
-
 footer {
     background: #17152e;
     color: white;
@@ -210,10 +201,8 @@ footer {
     font-size: 15px;
 }
 
-/* Mobile Responsive */
-
+/* Responsive Design */
 @media (max-width: 768px) {
-
     header {
         padding: 18px 5%;
     }
